@@ -1,0 +1,167 @@
+html {
+  background-color: #003200;
+}
+#root {
+  display: flex;
+  width: 900px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-width: 0;
+  background-color: #003200;
+  margin: 0 auto;
+}
+
+#main {
+  display: flex;
+  width: 900px;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-width: 0;
+  background-color: #003200;
+  margin: 0 auto;	
+}
+
+
+div {
+  border: solid 1px #64771a;
+  user-select: none;
+}
+
+.containerDiv {
+display: flex;
+flex-direction: column;
+flex-basis: 400px ;
+}
+
+.row {
+  display: flex;
+  flex-basis: 40px;
+  justify-content: space-around;
+  cursor: pointer;
+  color: #003200;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: 'Orbitron', sans-serif;
+  color: #64771a;
+  font-weight: bold;
+}
+
+.selected {
+  background-color: yellowgreen;
+  animation: parpadeo 1s;
+}
+
+.reach {
+  background-color: yellow;
+  animation: parpadeo 1s;
+}
+
+.water {
+  background-color: aqua;
+}
+
+.sunk {
+  background-color: red;
+  animation: parpadeo 1s 3;
+}
+
+.form {
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  display: flex;
+  height: 100px;
+  flex-basis: 900px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: solid 2px #64771a;
+  background-color: #003200;
+  color: #64771a;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+
+button {
+  font-family: 'Orbitron', sans-serif;
+  color: #64771a;
+  background-color: #003200;
+  font-size: 13px;
+  font-weight: bold;
+  border: 2px solid #64771a;
+  padding: 5px 25px;
+  cursor: pointer
+		}
+button:hover {
+  color: white;
+  background-color: red;
+}
+
+#name { 
+  font-family: 'Orbitron', sans-serif;
+  padding:3px; 
+  font-size:16px; 
+  font-weight: bold;
+  border: solid 2px #64771a;
+  background-color:#003200; 
+  color:#64771a;  
+}
+#name:focus { 
+  background-color:#003200;
+  color:#64771a;  
+  outline:none; 
+}
+
+#infoDiv {
+  font-family: 'Orbitron', sans-serif;
+  position: relative;
+  display: flex;
+  height: 100px;
+  flex-basis: 900px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border: solid 2px #64771a;
+  background-color: #003200;
+  color: #64771a;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+@keyframes parpadeo {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.parpadear {
+  animation: parpadeo 1.5s infinite;
+}
+
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css2?family=Orbitron&display=swap);
+
+
+body{
+  background: #003200;
+}
+
+svg{
+  width: 600px;
+  height: 120px;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  background: #003200;
+}
